@@ -15,31 +15,97 @@
 <nav class="navbar navbar-inverse navbar-static-top">
   <div class="container-fluid">
     <div class="navbar-header">
+
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbarTop">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
+
       <a class="navbar-brand" href="#">BikeSmart</a>
     </div>
+
     <div class="collapse navbar-collapse" id="myNavbarTop">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#"><span class = "glyphicon glyphicon-home"></span> Home</a></li>
+
         <li class = "dropdown">
           <a class = "dropdown-toggle" data-toggle = "dropdown" href="#">Bikes <span class = "caret"> </span></a>
           <ul class = "dropdown-menu">
-            <li><a href = "#">Joel's</a></li>
-            <li><a href = "#">Saili's</a></li>
-            <li><a href = "#">Chris's</a></li>
+            <li><a href = "#">Add bike</a></li>
+            <li class="divider"></li>
+            <li><a href = "#">Find bike</a></li>
           </ul>
         </li>
+
         <li><a href="#">Notifications</a></li> 
         <li><a href="#">Messages</a></li>
       </ul>
+
       <ul class="nav navbar-nav navbar-right">
+        <li class = "dropdown">
+          <a class = "dropdown-toggle" data-toggle = "dropdown" href="#">Settings <span class = "caret"> </span></a>
+          <ul class = "dropdown-menu">
+            <li><a href = "#">Bike</a></li>
+            <li class="divider"></li>
+            <li><a href = "#">Privacy</a></li>
+            <li class="divider"></li>
+            <li><a href = "#">Account</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Sign Up</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign in <b class="caret"></b></a>
+              <ul class="dropdown-menu" style="padding: 25px;min-width: 250px;">
+                        <li>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                    <div class="form-group">
+                                       <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                       <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                    </div>
+                                    <div class="form-group">
+                                       <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                       <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                    </div>
+                                    <div class="checkbox">
+                                       <label>
+                                       <input type="checkbox"> Remember me
+                                       </label>
+                                    </div>
+                                    <div class="form-group">
+                                       <button type="submit" class="btn btn-info btn-block">Sign in</button>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </li>
+                        <!-- <li class="divider"></li>
+                        <li>
+                           <input class="btn btn-primary btn-block" type="button" id="sign-in-google" value="Sign In with Google">
+                           <input class="btn btn-primary btn-block" type="button" id="sign-in-twitter" value="Sign In with Twitter">
+                        </li> -->
+                     </ul>
+                  </li>
+               </ul>
+
+
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li class = "dropdown">
+          <a class = "dropdown-toggle" data-toggle = "dropdown" href="#">Settings <span class = "caret"> </span></a>
+          <ul class = "dropdown-menu">
+            <li><a href = "#">Bike</a></li>
+            <li><a href = "#">Privacy</a></li>
+            <li><a href = "#">Account</a></li>
+          </ul>
+        </li>
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+      </ul> -->
+
+
+
     </div>
   </div>
 </nav>
@@ -47,23 +113,27 @@
 
 
 
+
+
+
 <!-- four column content and "jumptron" -->
 <div class="container">
   <div class="jumbotron">
     <h1>Welcome to BikeSmart!</h1>      
-    <p>This page will grow as we add more and more components from Bootstrap...</p>      
-    <a href="#" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-search"></span> Search</a>
+    <p>This site will continue to grow as the BikeSmart platform improves...</p>      
+    <a href="mailto:otownsend92@gmail.com" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-envelope"></span> Contact us!</a>
   </div>
+
 
   <div class="row">
     <div class="col-md-3">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>There is no existing platform that allows a bicycle to communicate with other devices via the Internet. Such a system will need to solve power and connectivity issues related to an embedded system on a bike.</p>
     </div>
     <div class="col-md-3">        
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>      
+      <p>Our team is designing BikeSmart, a database for mobile bike information to enable developers to create profitable applications for users ranging from the casual commuter to the professional cyclist. </p>      
     </div>
     <div class="col-md-3">        
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>      
+      <p>This project will also act as a proof of concept for further integration of bikes into the Internet of Things.</p>      
     </div>
     <div class="col-md-3">        
       <p><strong>Note: On a large screen the content will be displayed as a four-column layout. (Just enlarge the browser window to see the effect). However, the content will automatically adjust itself into a single-column layout on a small screen. So, with Bootstrap, our page is now responsive to the screen size and adjusts itself accordingly.</strong></p>
